@@ -16,12 +16,12 @@ run `make tinyconfig`. This creates a basic configuration that we can now edit w
 `make menuconfig`.
 
 Now, follow these instructions:
- - Enable **Device drivers, character drivers, TTY**
- - Enable **General setup, configure standard kernel features (expert users), printk support**
+ - Enable **Device drivers → character devices → TTY**
+ - Enable **General setup → configure standard kernel features (expert users) → printk support**
  - Enable **64-bit kernel**
- - Enable **General setup, initramfs support**
+ - Enable **General setup → initramfs support**
    - Disable all the compression options except gzip, since that is the compression tool that we will be using.
- - Enable **Executable file formats, ELF binaries** and **Executable file formats, scripts starting with #!**
+ - Enable **Executable file formats → ELF binaries** and **Executable file formats → scripts starting with #!**
 
 For now, this is the configuration that we will be using. Save your changes by exiting.
 
